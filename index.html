@@ -49,7 +49,7 @@
     
     <!-- Business/Local SEO -->
     <meta name="geo.region" content="BR-AL" />
-    <meta name="geo.placename" content="Alagoas, Brasil" />
+    <meta name="geo.placename" content="<Alagoas, Brasil" />
     <meta name="ICBM" content="-9.6498,-35.7089" />
     
     <!-- Schema.org structured data -->
@@ -106,11 +106,11 @@
     </script>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/davidalvont/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/davidalvont/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/davidalvont/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/davidalvont/favicon.ico" />
-    
+    <link rel="icon" type="image/png" href="/davidalvont/assets/favicon-2M2Ass1p.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/davidalvont/assets/favicon-2M2Ass1p.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/davidalvont/assets/favicon-2M2Ass1p.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/davidalvont/assets/favicon-2M2Ass1p.png" />
+
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -121,6 +121,22 @@
     <meta name="msapplication-TileColor" content="#3B82F6" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <!-- Script for SPA routing in GitHub Pages -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License - https://github.com/rafgraph/spa-github-pages
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
     <script type="module" crossorigin src="/davidalvont/assets/index-B3B9ruSB.js"></script>
     <link rel="stylesheet" crossorigin href="/davidalvont/assets/index-25pncexF.css">
   </head>
